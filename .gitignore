@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/AutoMorseCode/v15
+/Debug
+/Release
+/AutoMorseCode.vcxproj
+/AutoMorseCode.vcxproj.filters
+/AutoMorseCode.vcxproj.user

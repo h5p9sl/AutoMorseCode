@@ -4,7 +4,7 @@
 #include <string>
 #include <stdio.h>
 
-void SendIambicKeys(int WPM)
+void Translator::SendIambicKeys(int WPM)
 {
 	// T = 1200 / W
 	uint32_t TimeUnit = 1200 / WPM;
@@ -40,7 +40,7 @@ void SendIambicKeys(int WPM)
 	} while (keys[0] || keys[1]);
 }
 
-void TranslateAndSend(int WPM, char* Message)
+void Translator::TranslateAndSend(int WPM, char* Message)
 {
 	// T = 1200 / W
 	uint32_t TimeUnit = 1200 / WPM;
@@ -84,7 +84,7 @@ void TranslateAndSend(int WPM, char* Message)
 
 }
 
-void SendCharacter(int TimeUnit, char * CharacterPattern)
+void Translator::SendCharacter(int TimeUnit, char * CharacterPattern)
 {
 	// Input struct
 	static INPUT input;

@@ -4,10 +4,13 @@
 
 #include "Translator.h"
 
+// This is some horrible code and I think I might rewrite all of it... soon
 
 int main()
 {
-	puts("Use \'J\'(dit) and \'L\'(dah) keys to send iambic keys after determining WPM.");
+    Translator translator;
+
+	puts("Use \'J\'(dit) and \'K\'(dah) keys to send iambic keys after determining WPM.");
 
 	int WPM = 0;
 	while (true)
@@ -28,11 +31,11 @@ int main()
 				send = false;
 				break;
 			}
-			SendIambicKeys(WPM);
+            translator.SendIambicKeys(WPM);
 			Sleep(5);
 		}
 		if (send) {
-			TranslateAndSend(WPM, input);
+			translator.TranslateAndSend(WPM, input);
 		}
 	}
 	return 0;

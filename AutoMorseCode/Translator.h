@@ -8,6 +8,10 @@
 #define IAMBIC_DIT 0x4A
 #define IAMBIC_DAH 0x4B
 
-void SendIambicKeys(int WPM);
-void TranslateAndSend(int WPM, char* Message);
-void SendCharacter(int TimeUnit, char* CharacterPattern);
+class Translator
+{
+public:
+    void SendIambicKeys(int WPM);
+    void TranslateAndSend(int WPM, char* Message);
+    void SendCharacter(int TimeUnit, char* CharacterPattern);
+};
